@@ -14,7 +14,7 @@ var parser = spawn("java", ["-jar",
 });
 
 
-fs.createReadStream('./dem/*.dem').pipe(parser.stdin);
+fs.createReadStream('./dem/2332828356.dem').pipe(parser.stdin);
 
 parser.stdin.on('error', exit);
 parser.stdout.on('error', exit);
